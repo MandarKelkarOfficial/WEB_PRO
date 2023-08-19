@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
 
+    <style>
+      .color-change {
+        color: black; /* Change this to the desired font color */
+      }
+    </style>
+
   </head>
 
 <body>
@@ -52,7 +58,7 @@
                               </ul>
                           </li>
                           <li class="scroll-to-section"><a href="#about">About</a></li>
-                          <li class="scroll-to-section"><a href="#">Architecture</a></li>
+                          <li class="scroll-to-section"><a href="Architecture.html">Architecture</a></li>
                           <li class="scroll-to-section"><a href="#">Gallery</a></li>
                           <li><a href="contact-us.html">Contact Us</a></li> 
                       </ul>        
@@ -347,14 +353,27 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-7">
-          <div class="left-image">
-            <img src="assets/images/calculator-image.png" alt="">
+          <div class=" d-flex justify-content-center align-items-center mt-4">
+            <h1 style="color: #ff511a;">Opening hours</h1> 
+            
+           
           </div>
+          <div class=" d-flex justify-content-center align-items-center mt-4">
+            <h5 style="color: white;">Mon - Sat 10:00AM - 6:00PM</h5> 
+            
+           
+          </div>
+          <div class=" d-flex justify-content-center align-items-center mt-4">
+            <h5 style="color: white;">Sunday - As per Appointment</h5> 
+            
+           
+          </div>
+          
         </div>
         <div class="col-lg-5">
           <div class="section-heading">
-            <h6>Your Freedom</h6>
-            <h4>Get a Financial Plan</h4>
+            <h6>NATA PRISM</h6>
+            <h4>Enquire now !</h4>
           </div>
           <form id="calculate" action="" method="get">
             <div class="row">
@@ -370,25 +389,31 @@
                   <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="" required="">
                 </fieldset>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-6">
                 <fieldset>
-                  <label for="subject">Subject</label>
-                  <input type="subject" name="subject" id="subject" placeholder="" autocomplete="on" >
+                  <label for="contact">Contact</label>
+                  <input type="number" name="contact" id="contact" placeholder="" autocomplete="on" >
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <label for="subject">Address</label>
+                  <input type="address" name="address" id="address" placeholder="" autocomplete="on" >
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <label for="chooseOption" class="form-label">Your Reason</label>
+                  <label for="chooseOption" class="form-label">Subject</label>
                   <select name="Category" class="form-select" aria-label="Default select example" id="chooseOption" onchange="this.form.click()">
                       <option selected>Choose an Option</option>
-                      <option type="checkbox" name="option1" value="Online Banking">Online Banking</option>
-                      <option value="Financial Control">Financial Control</option>
-                      <option value="Yearly Profit">Yearly Profit</option>
-                      <option value="Crypto Investment">Crypto Investment</option>
+                      <option type="checkbox" name="option1" value="NATA">NATA</option>
+                      <option value="JEE 2">JEE 2</option>
+                      <!-- <option value="Yearly Profit">Yearly Profit</option>
+                      <option value="Crypto Investment">Crypto Investment</option> -->
                   </select>
               </fieldset>
               </div>
-              <div class="col-lg-12">
+              <div class="col-lg-12 d-flex justify-content-center align-items-center">
                 <fieldset>
                   <button type="submit" id="form-submit" class="orange-button">Submit Now</button>
                 </fieldset>
@@ -413,29 +438,29 @@
           <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
             <div class="item">
               <i class="fa fa-quote-left"></i>
-              <p>“Donec et nunc massa. Nullam non felis dignissim, dapibus turpis semper, vulputate lorem. Nam volutpat posuere tellus, in porttitor justo interdum nec. Aenean in dapibus risus, in euismod ligula. Aliquam vel scelerisque elit.”</p>
-              <h4>David Eigenberg</h4>
-              <span>CEO of Mexant</span>
+              <p>“It’s the best class I have ever attended. we have a lot of fun along with studies & of course, Madam is a very cool & good teacher.”</p>
+              <h4>Shivani kondhalkar</h4>
+              <span>Sinhgad COA</span>
               <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
+                <img src="https://nataclassesinpune.com/wp-content/uploads/2019/02/sk1.jpg" alt="">
               </div>
             </div>
             <div class="item">
               <i class="fa fa-quote-left"></i>
-              <p>“Etiam id ligula risus. Fusce fringilla nisl nunc, nec rutrum lectus cursus nec. In blandit nibh dolor, at rutrum leo accumsan porta. Nullam pulvinar eros porttitor risus condimentum tempus.”</p>
-              <h4>Andrew Garfield</h4>
-              <span>CTO of Mexant</span>
+              <p>“ It was really good. perfect atmosphere for learning, one should 100% visit this place when opting for architecture.”</p>
+              <h4>Kunal patil</h4>
+              <span>LPU Punjab</span>
               <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
+                <img src="https://nataclassesinpune.com/wp-content/uploads/2019/02/kp.jpg" alt="">
               </div>
             </div>
             <div class="item">
               <i class="fa fa-quote-left"></i>
-              <p>“Ut dictum vehicula massa, ac pharetra leo tincidunt eu. Phasellus in tristique magna, ac gravida leo. Integer sed lorem sapien. Ut viverra mauris sed lobortis commodo.”</p>
-              <h4>George Lopez</h4>
-              <span>Crypto Manager</span>
+              <p>“Awesome teaching methods by Shruti Mam learned a lot &amp; also improved my drawing thank you, Mam”</p>
+              <h4>Vedant Raykar</h4>
+              <span>Sinhgad COA</span>
               <div class="right-image">
-                <img src="assets/images/testimonials-01.jpg" alt="">
+                <img src="" alt="">
               </div>
             </div>
           </div>
@@ -481,17 +506,128 @@
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright © 2023 Prism Co., Ltd. All Rights Reserved. 
-          
-          <br>Designed by <a title="CSS Templates" rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a> Distributed By <a  href="https://www.instagram.com/its_maddy_644" >Mandar Kelkar</a></p>
-        </div>
-      </div>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
     </div>
-  </footer>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/nataclassespune" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/trupti90591778" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <!-- <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a> -->
+      <a href="https://www.youtube.com/watch?v=Awm-D1i9r78/watch?v=x66y6a0nkb4" class="me-4 link-secondary">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <!-- <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a> -->
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h3 class="text-uppercase fw-bold mb-4">
+            <!-- <i class="fas fa-gem me-3 text-secondary"></i> -->
+            PRISM
+          </h3>
+          <p class="color-change">
+            We are a leading NATA coaching center that prioritizes 
+            teaching students critical thinking over dictating specific thoughts.
+             Our approach includes regular mock tests to assess subject mastery. 
+             Our faculty consists of qualified architects and artists.
+              We focus on helping students establish a solid knowledge foundation for exam success.
+             <a href="index.html">Learn more </a>about our approach... 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p class="color-change">
+            <a href="#!" class="text-reset">NATA</a>
+          </p>
+          <p class="color-change">
+            <a href="#!" class="text-reset">JEE 2</a>
+          </p>
+ 
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Quick links
+          </h6>
+          <p class="color-change">
+            <a href="index.html" class="text-reset ">HOME</a>
+          </p>
+          <p class="color-change">
+            <a href="#top" class="text-reset">ARCHITECTURE</a>
+          </p>
+          <p class="color-change">
+            <a href="#" class="text-reset">GALLERY</a>
+          </p>
+          <p class="color-change">
+            <a href="#!" class="text-reset">CONTACT US</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p class="color-change"><i class="fas fa-home me-3 text-secondary"></i> Akruti, Off No. 20, 2nd Floor, Vijaya Chambers, Vitthalwadi, Opp. SBI, Hingane Khurd, Sinhgad Road, Pune- 411051 .</p>
+          <p class="color-change">
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            pyramid.nata@gmail.com
+          </p>
+          <p class="color-change"><i class="fas fa-phone me-3 text-secondary"></i> +91 9823291391 / +91 9422163316</p>
+          <!-- <p class="color-change"><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p> -->
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="">NATA PRISM</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->

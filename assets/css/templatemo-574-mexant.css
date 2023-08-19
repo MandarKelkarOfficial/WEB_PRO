@@ -221,7 +221,7 @@ body {
 
 .green-button a {
   font-size: 14px;
-  color: #fff;
+  color: #000;
   background-color: #43ba7f;
   padding: 12px 30px;
   display: inline-block;
@@ -238,7 +238,7 @@ body {
 
 .orange-button a {
   font-size: 14px;
-  color: #fff;
+  color: #000;
   background-color: #ff511a;
   padding: 12px 30px;
   display: inline-block;
@@ -1592,7 +1592,7 @@ section.map .info-item:hover {
 
 section.map .info-item i {
   font-size: 36px;
-  color: #43ba7f;
+  color: #2eae6e;
   margin-bottom: 25px;
 }
 
@@ -1606,7 +1606,7 @@ section.map .info-item h4 {
 section.map .info-item a {
   font-size: 15px;
   font-weight: 600;
-  color: #43ba7f;
+  color: #000;
   transition: all 0.3s;
 }
 
@@ -1648,7 +1648,7 @@ section.map .info-item a:hover {
 }
 #contact button.orange-button {
   font-size: 14px;
-  color: #fff;
+  color: #000;
   background-color: #ff511a;
   padding: 12px 30px;
   display: inline-block;
