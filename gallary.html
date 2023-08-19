@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image" href="assets/images/web_icon.png" />
+    <title>PRISM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-574-mexant.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <style>
+      .color-change {
+        color: black; /* Change this to the desired font color */
+      }
+
+      /*** Project Portfolio ***/
+      #portfolio-flters li {
+        display: inline-block;
+        font-weight: 500;
+        color: var(--dark);
+        cursor: pointer;
+        transition: 0.5s;
+        border-bottom: 2px solid transparent;
+      }
+
+      #portfolio-flters li:hover,
+      #portfolio-flters li.active {
+        color: var(--primary);
+        border-color: var(--primary);
+      }
+
+      .portfolio-img {
+        position: relative;
+      }
+
+      .portfolio-btn {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(98, 68, 197, 0.9);
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        padding: 30px;
+        padding-bottom: 100px !important;
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .portfolio-item:hover .portfolio-btn {
+        opacity: 1;
+        padding-bottom: 30px !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <!-- <img src="assets/images/logo.png" alt=""> -->
+                <span> PRISM </span>
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li class="scroll-to-section">
+                  <a href="index.html" >Home</a>
+                </li>
+                <!-- <li class="scroll-to-section"><a href="#services">Services</a></li> -->
+                <li class="has-sub">
+                  <a href="javascript:void(0)">Courses</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">NATA in Pune</a></li>
+                    <li><a href="#">JEE 2</a></li>
+                    <li><a href="#">Students Work</a></li>
+                  </ul>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="index.html">About</a>
+                </li>
+                <li class="scroll-to-section">
+                  <a href="Architecture.html">Architecture</a>
+                </li>
+                <li class="scroll-to-section"><a href="#" class="active">Gallery</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+              </ul>
+              <a class="menu-trigger">
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+    <div class="page-heading">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="header-text">
+              <h2>Gallery</h2>
+              <div class="div-dec"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Start -->
+    <div class="container-xxl py-6 pt-5" id="project">
+      <div class="container">
+        <div
+          class="row g-5 mb-5 align-items-center wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="col-lg-6">
+            <h1 class="display-5 mb-0">Art Gallery</h1>
+          </div>
+          <div class="col-lg-6 text-lg-end">
+            <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+              <li class="mx-3 active" data-filter="*">All</li>
+              <li class="mx-3" data-filter=".first">Composition</li>
+              <li class="mx-3" data-filter=".second">Memory Drawing</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="row g-4 portfolio-container wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="https://nataclassesinpune.com/wp-content/uploads/2019/02/memory-Drawing6.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://nataclassesinpune.com/wp-content/uploads/2019/02/memory-Drawing6.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="https://nataclassesinpune.com/wp-content/uploads/2019/02/memory-Drawing5.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://nataclassesinpune.com/wp-content/uploads/2019/02/memory-Drawing5.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item second">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="https://nataclassesinpune.com/wp-content/uploads/2019/02/memory-Drawing4.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://nataclassesinpune.com/wp-content/uploads/2019/02/memory-Drawing4.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="https://nataclassesinpune.com/wp-content/uploads/2019/02/composition6.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://nataclassesinpune.com/wp-content/uploads/2019/02/composition6.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="https://nataclassesinpune.com/wp-content/uploads/2019/02/composition2.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://nataclassesinpune.com/wp-content/uploads/2019/02/composition2.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item first">
+            <div class="portfolio-img rounded overflow-hidden">
+              <img class="img-fluid" src="https://nataclassesinpune.com/wp-content/uploads/2019/02/composition5.jpg" alt="" />
+              <div class="portfolio-btn">
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href="https://nataclassesinpune.com/wp-content/uploads/2019/02/composition5.jpg"
+                  data-lightbox="portfolio"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
+                  href=""
+                  ><i class="fa fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Projects End -->
+
+    <section class="partners">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="assets/images/client-01.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="assets/images/client-01.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="assets/images/client-01.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="assets/images/client-01.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="assets/images/client-01.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-6">
+            <div class="item">
+              <img src="assets/images/client-01.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a
+            href="https://www.facebook.com/nataclassespune"
+            class="me-4 link-secondary"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://twitter.com/trupti90591778"
+            class="me-4 link-secondary"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- <a href="" class="me-4 link-secondary">
+            <i class="fab fa-instagram"></i>
+          </a> -->
+          <a
+            href="https://www.youtube.com/watch?v=Awm-D1i9r78/watch?v=x66y6a0nkb4"
+            class="me-4 link-secondary"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+          <!-- <a href="" class="me-4 link-secondary">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 link-secondary">
+            <i class="fab fa-github"></i>
+          </a> -->
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h3 class="text-uppercase fw-bold mb-4">
+                <!-- <i class="fas fa-gem me-3 text-secondary"></i> -->
+                PRISM
+              </h3>
+              <p class="color-change">
+                We are a leading NATA coaching center that prioritizes teaching
+                students critical thinking over dictating specific thoughts. Our
+                approach includes regular mock tests to assess subject mastery.
+                Our faculty consists of qualified architects and artists. We
+                focus on helping students establish a solid knowledge foundation
+                for exam success.
+                <a href="index.html">Learn more </a>about our approach...
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p class="color-change">
+                <a href="#!" class="text-reset">NATA</a>
+              </p>
+              <p class="color-change">
+                <a href="#!" class="text-reset">JEE 2</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Quick links</h6>
+              <p class="color-change">
+                <a href="index.html" class="text-reset">HOME</a>
+              </p>
+              <p class="color-change">
+                <a href="#top" class="text-reset">ARCHITECTURE</a>
+              </p>
+              <p class="color-change">
+                <a href="#" class="text-reset">GALLERY</a>
+              </p>
+              <p class="color-change">
+                <a href="#!" class="text-reset">CONTACT US</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p class="color-change">
+                <i class="fas fa-home me-3 text-secondary"></i> Akruti, Off No.
+                20, 2nd Floor, Vijaya Chambers, Vitthalwadi, Opp. SBI, Hingane
+                Khurd, Sinhgad Road, Pune- 411051 .
+              </p>
+              <p class="color-change">
+                <i class="fas fa-envelope me-3 text-secondary"></i>
+                pyramid.nata@gmail.com
+              </p>
+              <p class="color-change">
+                <i class="fas fa-phone me-3 text-secondary"></i> +91 9823291391
+                / +91 9422163316
+              </p>
+              <!-- <p class="color-change"><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p> -->
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.025)"
+      >
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="">NATA PRISM</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+    //   var interleaveOffset = 0.5;
+
+    //   var swiperOptions = {
+    //     loop: true,
+    //     speed: 1000,
+    //     grabCursor: true,
+    //     watchSlidesProgress: true,
+    //     mousewheelControl: true,
+    //     keyboardControl: true,
+    //     navigation: {
+    //       nextEl: ".swiper-button-next",
+    //       prevEl: ".swiper-button-prev",
+    //     },
+    //     on: {
+    //       progress: function () {
+    //         var swiper = this;
+    //         for (var i = 0; i < swiper.slides.length; i++) {
+    //           var slideProgress = swiper.slides[i].progress;
+    //           var innerOffset = swiper.width * interleaveOffset;
+    //           var innerTranslate = slideProgress * innerOffset;
+    //           swiper.slides[i].querySelector(".slide-inner").style.transform =
+    //             "translate3d(" + innerTranslate + "px, 0, 0)";
+    //         }
+    //       },
+    //       touchStart: function () {
+    //         var swiper = this;
+    //         for (var i = 0; i < swiper.slides.length; i++) {
+    //           swiper.slides[i].style.transition = "";
+    //         }
+    //       },
+    //       setTransition: function (speed) {
+    //         var swiper = this;
+    //         for (var i = 0; i < swiper.slides.length; i++) {
+    //           swiper.slides[i].style.transition = speed + "ms";
+    //           swiper.slides[i].querySelector(".slide-inner").style.transition =
+    //             speed + "ms";
+    //         }
+    //       },
+    //     },
+    //   };
+
+    //   var swiper = new Swiper(".swiper-container", swiperOptions);
+
+
+       // Portfolio isotope and filter
+    var portfolioIsotope = $(".portfolio-container").isotope({
+        itemSelector: ".portfolio-item",
+        layoutMode: "fitRows",
+    });
+    $("#portfolio-flters li").on("click", function() {
+        $("#portfolio-flters li").removeClass("active");
+        $(this).addClass("active");
+
+        portfolioIsotope.isotope({ filter: $(this).data("filter") });
+    });
+    </script>
+  </body>
+</html>
