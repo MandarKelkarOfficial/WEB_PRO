@@ -103,23 +103,21 @@
                 <i class="fa fa-envelope"></i>
                 <h4>EMAIL</h4>
                 <a href="#">
-                   pyramid.nata@gmail.com</a> <br><br><br>
+                   pyramid.nata@gmail.com</a> <br><br><br><br>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="info-item">
                 <i class="fa fa-phone"></i>
                 <h4>CONTACT</h4>
-                <a href="#">Phone: +91 9823291391 <br> +91 9422163316 </a> <br><br>
+                <a href="#">Phone: +91 98232 91391 <br> +91 96370 95162 </a> <br><br> <br>
               </div>
             </div>
             <div class="col-lg-4">
               <div class="info-item">
                 <i class="fa fa-map-marked-alt"></i>
                 <h4>Address</h4>
-                <a href="#">Sinhgad Road, Above Somnath Dairy,
-                  Near Shimar and Shine,
-                  Hingane Khurd, Pune- 411051</a>
+                <a href="#">Mohite Paradise, hingane khurd, Narveer Tanaji Malusare Rd, Anand Nagar, Pune, Maharashtra 411051</a>
               </div>
             </div>
           </div>
@@ -133,14 +131,15 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading">
-            <h4>NATA PYRAMID - Enquiry Now</h4>
+            <h4>PRISM - Enquiry Now</h4>
             <h6>Please fill in your details so that we know you better</h6>
             
 
           </div>
         </div>
         <div class="col-lg-10 offset-lg-1">
-          <form id="contact" action="" method="post">
+          <form id="contact" action="https://api.web3forms.com/submit"  method="POST">
+            <input type="hidden" name="access_key" value="2b0dbcc2-0baf-4954-b83a-ae99d11cc9d2">
             <div class="row">
               <div class="col-lg-6">
                 <fieldset>
@@ -169,7 +168,7 @@
               </div>
               <div class="col-lg-12 d-flex justify-content-center align-items-center">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                  <button type="submit" id="sendEmailButton" class="orange-button">Send Message</button>
                 </fieldset>
               </div>
             </div>
@@ -179,42 +178,7 @@
     </div>
   </section>
 
-  <section class="partners">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-2 col-sm-4 col-6">
-          <div class="item">
-            <img src="assets/images/client-01.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted">
@@ -341,8 +305,10 @@
 
   <!-- Scripts -->
   <!-- Bootstrap core JavaScript -->
+  
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
@@ -350,6 +316,43 @@
     <script src="assets/js/tabs.js"></script>
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/custom.js"></script>
+    <!-- <script >
+       $(document).ready(function() {
+            $('#sendEmailButton').click(function() {
+                const apiKey = 'ggjcuoizxcghafuz';
+                const toEmail = 'sdbcontactme@gmail.com'
+                const subject = $('#subject').val();
+                const message = $('#message').val();
+                const ofEmail = $('#email').val();
+
+                $.ajax({
+                    url: 'https://api.sendgrid.com/v3/mail/send',
+                    type: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${apiKey}`,
+                        'Content-Type': 'application/json'
+                    },
+                    data: JSON.stringify({
+                        personalizations: [{
+                            to: [{ email: toEmail }],
+                            subject: subject
+                        }],
+                        from: { email: ofEmail }, // Replace with your sender email
+                        content: [{ type: 'text/plain', value: message }]
+                    }),
+                    success: function(response) {
+                        console.log('Email sent successfully!', response);
+                        alert('Email sent successfully!');
+                    },
+                    error: function(error) {
+                        console.error('Email could not be sent.', error);
+                        alert('Email could not be sent.');
+                    }
+                });
+            });
+        });
+    </script> -->
+    
     <script>
       var interleaveOffset = 0.5;
 

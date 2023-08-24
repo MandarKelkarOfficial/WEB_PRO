@@ -270,43 +270,7 @@
     </div>
     <!-- Projects End -->
 
-    <section class="partners">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2 col-sm-4 col-6">
-            <div class="item">
-              <img src="assets/images/client-01.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-sm-4 col-6">
-            <div class="item">
-              <img src="assets/images/client-01.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-sm-4 col-6">
-            <div class="item">
-              <img src="assets/images/client-01.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-sm-4 col-6">
-            <div class="item">
-              <img src="assets/images/client-01.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-sm-4 col-6">
-            <div class="item">
-              <img src="assets/images/client-01.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-2 col-sm-4 col-6">
-            <div class="item">
-              <img src="assets/images/client-01.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-white text-muted">
       <!-- Section: Social media -->
@@ -459,48 +423,48 @@
     <script src="assets/js/swiper.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
-    //   var interleaveOffset = 0.5;
+      var interleaveOffset = 0.5;
 
-    //   var swiperOptions = {
-    //     loop: true,
-    //     speed: 1000,
-    //     grabCursor: true,
-    //     watchSlidesProgress: true,
-    //     mousewheelControl: true,
-    //     keyboardControl: true,
-    //     navigation: {
-    //       nextEl: ".swiper-button-next",
-    //       prevEl: ".swiper-button-prev",
-    //     },
-    //     on: {
-    //       progress: function () {
-    //         var swiper = this;
-    //         for (var i = 0; i < swiper.slides.length; i++) {
-    //           var slideProgress = swiper.slides[i].progress;
-    //           var innerOffset = swiper.width * interleaveOffset;
-    //           var innerTranslate = slideProgress * innerOffset;
-    //           swiper.slides[i].querySelector(".slide-inner").style.transform =
-    //             "translate3d(" + innerTranslate + "px, 0, 0)";
-    //         }
-    //       },
-    //       touchStart: function () {
-    //         var swiper = this;
-    //         for (var i = 0; i < swiper.slides.length; i++) {
-    //           swiper.slides[i].style.transition = "";
-    //         }
-    //       },
-    //       setTransition: function (speed) {
-    //         var swiper = this;
-    //         for (var i = 0; i < swiper.slides.length; i++) {
-    //           swiper.slides[i].style.transition = speed + "ms";
-    //           swiper.slides[i].querySelector(".slide-inner").style.transition =
-    //             speed + "ms";
-    //         }
-    //       },
-    //     },
-    //   };
+      var swiperOptions = {
+        loop: true,
+        speed: 1000,
+        grabCursor: true,
+        watchSlidesProgress: true,
+        mousewheelControl: true,
+        keyboardControl: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+          progress: function () {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              var slideProgress = swiper.slides[i].progress;
+              var innerOffset = swiper.width * interleaveOffset;
+              var innerTranslate = slideProgress * innerOffset;
+              swiper.slides[i].querySelector(".slide-inner").style.transform =
+                "translate3d(" + innerTranslate + "px, 0, 0)";
+            }
+          },
+          touchStart: function () {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = "";
+            }
+          },
+          setTransition: function (speed) {
+            var swiper = this;
+            for (var i = 0; i < swiper.slides.length; i++) {
+              swiper.slides[i].style.transition = speed + "ms";
+              swiper.slides[i].querySelector(".slide-inner").style.transition =
+                speed + "ms";
+            }
+          },
+        },
+      };
 
-    //   var swiper = new Swiper(".swiper-container", swiperOptions);
+      var swiper = new Swiper(".swiper-container", swiperOptions);
 
 
        // Portfolio isotope and filter
