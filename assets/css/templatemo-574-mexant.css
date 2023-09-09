@@ -345,7 +345,7 @@ header
 }
 
 .logo img {
-  height: 120px;
+  height: 112px;
   width: 100%;
   margin-top: -14px;
   overflow: hidden;
@@ -630,7 +630,13 @@ header
 }
 
 .header-area.header-sticky {
-  min-height: 95px;
+  min-height: 100px;
+  /* background-color: #2e9dac; */
+}
+
+.header-area.header-sticky.background-header {
+  background-color: #4baee0;
+  /* background-color: #2e9dac; */
 }
 
 .header-area .nav {
